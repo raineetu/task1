@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
-import { Task1Data } from "../../constants/task1Constant";
+import { Task1Data, Task1DataHovered } from "../../constants/task1Constant";
+import HoveredCardUI from "./HoveredCardUI";
 
 const Task1 = () => {
   const headline = "Step In. Skill Up. Stand Out. 🚀";
@@ -8,7 +9,7 @@ const Task1 = () => {
 
   return (
     <div className="mt-5 xl:mt-[22px] mx-10 xl:mx-[113.5px] mb-[60px]">
-      {/* header */}
+      {/* teask 1 header */}
       <div className="flex flex-col gap-[24px]">
         <p className="text-black-900 font-medium text-[24px]">
           Your SkillShikshya Journey
@@ -25,17 +26,25 @@ const Task1 = () => {
         </p>
       </div>
 
-      {/* card section */}
+      {/* task 1 card section */}
       <div className="mt-[48px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[32px]">
-        {Task1Data.map((card) => (
-          <Card
+        {Task1DataHovered.map((card) => (
+          // <Card
+          //   key={card.id}
+          //   image={card.image}
+          //   title={card.title}
+          //   subtitle={card.subtitle}
+          //   description={card.description}
+          //   bgColor={card.bgColor}
+          //   imagePosition={card.imagePosition}
+          // />
+          <HoveredCardUI
             key={card.id}
             image={card.image}
-            title={card.title}
-            subtitle={card.subtitle}
             description={card.description}
             bgColor={card.bgColor}
             imagePosition={card.imagePosition}
+            bubbleImage={card.bubbleImage}
           />
         ))}
       </div>

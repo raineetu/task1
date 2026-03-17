@@ -2,6 +2,9 @@ import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
+import img9 from "../assets/img9.png";
+import img10 from "../assets/img10.png";
+import img11 from "../assets/img11.png";
 
 export const Task1Data = [
   {
@@ -21,7 +24,7 @@ export const Task1Data = [
     subtitle: "Practical skills, real projects.",
     description:
       "Theory is great, but action is better. At SkillShikshya, you learn by doing. Hands-on projects and real-world scenarios help you build, break, and create—leading to true mastery.",
-    bgColor: "bg-[#3AADA8]",
+    bgColor: "bg-[#5492A0]",
     imagePosition: "right",
   },
   {
@@ -31,7 +34,7 @@ export const Task1Data = [
     subtitle: "You're not learning alone.",
     description:
       "Stuck or need feedback? SkillShikshya's community of mentors and learners has your back with live support, interactive discussions, and expert insights. You're never on your own.",
-    bgColor: "bg-[#7B61C4]",
+    bgColor: "bg-[#6C64A8]",
     imagePosition: "left",
   },
   {
@@ -41,7 +44,26 @@ export const Task1Data = [
     subtitle: "Build your portfolio, get job-ready.",
     description:
       "Your journey ends with achievement. Each completed project builds a portfolio showcasing your skills and job readiness, bringing you closer to that dream job, promotion, or your own venture.",
-    bgColor: "bg-[#B5974A]",
+    bgColor: "bg-[#A88964]",
+    imagePosition: "right",
+  },
+];
+
+export const Task1DataHovered = [
+  {
+    id: 1,
+    image: img9,
+    description: "Clarity unlocked—stickers, sips, and skills all in one go!",
+    bgColor: "bg-[#F45B5B]",
+    imagePosition: "right",
+    bubbleImage: img11,
+  },
+
+  {
+    id: 2,
+    image: img10,
+    description: "Focused faces—learning mode: ON!",
+    bgColor: "bg-[#5492A0]",
     imagePosition: "right",
   },
 ];

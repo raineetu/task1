@@ -10,11 +10,11 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`rounded-[30px]  relative flex items-center overflow-visible ${bgColor}`}
+      className={`rounded-[30px] relative h-[341px] flex items-center overflow-visible ${bgColor}`}
     >
       {/* Character Image */}
       <div
-        className={`absolute -bottom-15 h-[110%] w-[320px] z-10 ${
+        className={`absolute -bottom-15 h-[110%] w-full md:w-[320px] z-10 ${
           imagePosition === "left" ? "-left-20 " : "-right-6 "
         } `}
       >
@@ -22,7 +22,7 @@ const Card = ({
           src={image}
           alt={title}
           className="h-full w-full object-contain object-bottom"
-          // style={{ animation: "bounce 8s ease-in-out infinite" }}
+          style={{ animation: "bounce 8s ease-in-out infinite" }}
         />
       </div>
 
@@ -35,7 +35,7 @@ const Card = ({
         } `}
       >
         <div className="flex flex-col gap-[10px]">
-          <h2 className="text-base font-bold text-[32px] whitespace-nowrap overflow">
+          <h2 className="text-base font-bold text-[32px] whitespace-nowrap">
             {title}
           </h2>
           <p className="text-base font-medium text-[24px]">{subtitle}</p>
