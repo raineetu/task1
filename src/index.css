@@ -4,6 +4,8 @@
   --color-black-900: #414141;
   --color-primary-500: #1da077;
   --color-base: #fafafa;
+  --color-secondary-500: #c33241;
+  --color-secondary-50: #f9ebec;
 }
 
 @keyframes bounce {

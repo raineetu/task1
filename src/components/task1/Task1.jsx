@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { Task1Data } from "../../constants/textConstant";
+import { Task1Data } from "../../constants/task1Constant";
 
 const Task1 = () => {
   const headline = "Step In. Skill Up. Stand Out. 🚀";
