@@ -10,7 +10,7 @@ const HoveredCardUI = ({
 }) => {
   return (
     <>
-      <div className="relative w-[592px] mx-auto mt-5 text-base">
+      <div className="relative text-base">
         {/* Main Card Container */}
         <div
           className={`relative ${bgColor} rounded-[32px] flex items-center h-[341px] overflow-hidden`}
