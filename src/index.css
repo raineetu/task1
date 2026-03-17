@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-black-900: #414141;
+  --color-primary-500: #1da077;
+  --color-base: #fafafa;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
