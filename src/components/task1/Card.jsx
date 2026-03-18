@@ -22,7 +22,12 @@ const Card = ({
           src={image}
           alt={title}
           className="h-full w-full object-contain object-bottom"
-          style={{ animation: "bounce 8s ease-in-out infinite" }}
+          style={{
+            animation:
+              imagePosition === "left"
+                ? "card-float-reverse 3s ease-in-out infinite"
+                : "card-float 3s ease-in-out infinite",
+          }}
         />
       </div>
 
