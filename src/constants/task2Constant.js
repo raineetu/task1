@@ -2,6 +2,7 @@ import img5 from "../assets/img5.png";
 import img6 from "../assets/img6.png";
 import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
+import arrow from "../assets/arrow.svg";
 
 export const cards = [
   {
@@ -29,3 +30,5 @@ export const cards = [
     activeSub: "currently happening—don’t miss out on the action!",
   },
 ];
+
+export { arrow };

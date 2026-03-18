@@ -5,6 +5,7 @@ import InActiveCourseCard from "./InActiveCourseCard";
 
 const Task2 = () => {
   const [activeID, setActiveId] = useState(0);
+
   return (
     <div className="my-10 xl:my-[60px] mx-5 xl:mx-[112px]">
       {/* task 2 header */}

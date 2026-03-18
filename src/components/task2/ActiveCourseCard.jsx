@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const ActiveCourseCard = ({ cat, num, icons, activeSub }) => {
   return (
-    <div className="bg-secondary-500 py-[40px] pr-[38px] rounded-[35px]  text-secondary-50 flex flex-col items-center justify-center">
+    <div className="bg-secondary-500 max-w-[592px] py-[40px] pr-[38px] rounded-[35px] text-secondary-50 flex flex-col items-center justify-center">
       {/* view link */}
       <button className="group flex items-center gap-[8px] ml-auto text-right font-semibold text-[18px]">
         View all Courses{" "}
