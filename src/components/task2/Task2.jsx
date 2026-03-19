@@ -24,25 +24,51 @@ const Task2 = () => {
 
       {/* task 2 card */}
       <div className="mt-[48px] flex flex-col xl:flex-row gap-[32px]">
-        {cards.map((card) =>
-          card.id === activeID ? (
-            <ActiveCourseCard
+        {cards.map((card) => {
+          const isActive = card.id === activeID;
+
+          return (
+            <div
               key={card.id}
-              cat={card.cat}
-              num={card.num}
-              icons={card.icons}
-              activeSub={card.activeSub}
-            />
-          ) : (
-            <div key={card.id} onClick={() => setActiveId(card.id)}>
-              <InActiveCourseCard
-                cat={card.cat}
-                num={card.num}
-                sub={card.sub}
-              />
+              onClick={() => setActiveId(card.id)}
+              className="relative transition-all duration-500 ease-in-out"
+              style={{
+                flex: isActive ? "2 1 0%" : "1 1 0%",
+              }}
+            >
+              {/* Active card */}
+              <div
+                className="transition-opacity duration-500 ease-in-out absolute inset-0"
+                style={{
+                  opacity: isActive ? 1 : 0,
+                  pointerEvents: isActive ? "auto" : "none",
+                }}
+              >
+                <ActiveCourseCard
+                  cat={card.cat}
+                  num={card.num}
+                  icons={card.icons}
+                  activeSub={card.activeSub}
+                />
+              </div>
+
+              {/* Inactive card */}
+              <div
+                className="transition-opacity duration-500 ease-in-out"
+                style={{
+                  opacity: isActive ? 0 : 1,
+                  pointerEvents: isActive ? "none" : "auto",
+                }}
+              >
+                <InActiveCourseCard
+                  cat={card.cat}
+                  num={card.num}
+                  sub={card.sub}
+                />
+              </div>
             </div>
-          ),
-        )}
+          );
+        })}
       </div>
 
       {/* link to task 1 */}
