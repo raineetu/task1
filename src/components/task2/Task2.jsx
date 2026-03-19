@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ActiveCourseCard from "./ActiveCourseCard";
 import { cards } from "../../constants/task2Constant";
 import InActiveCourseCard from "./InActiveCourseCard";
+import { useNavigate } from "react-router-dom";
 
 const Task2 = () => {
   const [activeID, setActiveId] = useState(0);
+  const navigate = useNavigate();
 
   return (
     <div className="my-10 xl:my-[60px] mx-5 xl:mx-[112px]">
@@ -41,6 +43,14 @@ const Task2 = () => {
           ),
         )}
       </div>
+
+      {/* link to task 1 */}
+      <button
+        onClick={() => navigate("/")}
+        className="bg-gray-700 text-white rounded-2xl px-5 py-3 mt-16 cursor-pointer"
+      >
+        View Task1
+      </button>
     </div>
   );
 };

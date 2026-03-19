@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Card from "./Card";
 import { Task1Data, Task1DataHovered } from "../../constants/task1Constant";
 import HoveredCardUI from "./HoveredCardUI";
+import { useNavigate } from "react-router-dom";
 
 const headline = "Step In. Skill Up. Stand Out. 🚀";
 const greenWords = ["Step", "Skill", "Stand"];
 
 const Task1 = () => {
+  const navigate = useNavigate();
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
@@ -84,6 +86,14 @@ const Task1 = () => {
           );
         })}
       </div>
+
+      {/* link to task 2 */}
+      <button
+        onClick={() => navigate("/task2")}
+        className="bg-gray-700 text-white rounded-2xl px-5 py-3 mt-16 cursor-pointer"
+      >
+        View Task2
+      </button>
     </div>
   );
 };
