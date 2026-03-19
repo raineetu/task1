@@ -5,8 +5,9 @@ import InActiveCourseCard from "./InActiveCourseCard";
 import { useNavigate } from "react-router-dom";
 
 const Task2 = () => {
-  const [activeID, setActiveId] = useState(0);
   const navigate = useNavigate();
+
+  const [activeID, setActiveId] = useState(0);
 
   return (
     <div className="my-10 xl:my-[60px] mx-5 xl:mx-[112px]">

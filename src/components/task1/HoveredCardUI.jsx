@@ -7,7 +7,7 @@ const HoveredCardUI = ({
   bgColor,
   bubbleImage,
   imagePosition = "left",
-  pageBg = "bg-white",
+  pageBg = "bg-base",
 }) => {
   const isImageLeft = imagePosition === "left";
 

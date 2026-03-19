@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/nohemi");
 @import "tailwindcss";
 
 @theme {
@@ -7,9 +8,11 @@
   --color-secondary-500: #c33241;
   --color-secondary-50: #f9ebec;
   --color-neutral-800: #1f2937;
+  --font-sans: "Nohemi", sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
