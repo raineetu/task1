@@ -10,13 +10,13 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`rounded-[30px] relative h-[341px] flex items-center overflow-visible ${bgColor}`}
+      className={`rounded-[30px] relative md:h-[341px] flex flex-col md:flex-row md:items-center overflow-visible ${bgColor}`}
     >
       {/* Character Image */}
       <div
-        className={`absolute -bottom-15 h-[110%] w-full md:w-[320px] z-10 ${
-          imagePosition === "left" ? "-left-20 " : "-right-6 "
-        } `}
+        className={`md:absolute md:-bottom-15 h-[200px] md:h-[110%] w-full md:w-[320px] z-10 ${
+          imagePosition === "left" ? "md:-left-20" : "md:-right-6 md:order-2"
+        }`}
       >
         <img
           src={image}
@@ -33,11 +33,11 @@ const Card = ({
 
       {/* Text Content */}
       <div
-        className={`flex flex-col my-[58px] gap-[32px] min-w-0 w-full   ${
+        className={`flex flex-col gap-[32px] min-w-0 w-full px-6 pb-6 md:my-[58px] md:px-0 text-center md:text-inherit ${
           imagePosition === "left"
-            ? "ml-[206px] mr-[35px] text-right"
-            : "mr-[206px] ml-[35px] text-left"
-        } `}
+            ? "md:ml-[206px] md:mr-[35px] md:text-right"
+            : "md:mr-[206px] md:ml-[35px] md:text-left"
+        }`}
       >
         <div className="flex flex-col gap-[10px]">
           <h2 className="text-base font-bold text-[32px] whitespace-nowrap">

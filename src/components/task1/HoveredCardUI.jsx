@@ -59,7 +59,7 @@ const HoveredCardUI = ({
 
         {/* bubble image - bottom right */}
         {bubbleImage && (
-          <div className="absolute bottom-5 right-40 w-20 z-20">
+          <div className="absolute bottom-5 right-20 w-20 z-20">
             <img src={bubbleImage} alt="wow" className="rotate-45" />
           </div>
         )}
