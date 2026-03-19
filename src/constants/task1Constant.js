@@ -49,13 +49,14 @@ export const Task1Data = [
   },
 ];
 
+//hovered data
 export const Task1DataHovered = [
   {
     id: 1,
     image: img9,
     description: "Clarity unlocked—stickers, sips, and skills all in one go!",
     bgColor: "bg-[#F45B5B]",
-    imagePosition: "right",
+    imagePosition: "left",
     bubbleImage: img11,
   },
 

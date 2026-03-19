@@ -3,9 +3,10 @@ import Card from "./Card";
 import { Task1Data, Task1DataHovered } from "../../constants/task1Constant";
 import HoveredCardUI from "./HoveredCardUI";
 
+const headline = "Step In. Skill Up. Stand Out. 🚀";
+const greenWords = ["Step", "Skill", "Stand"];
+
 const Task1 = () => {
-  const headline = "Step In. Skill Up. Stand Out. 🚀";
-  const greenWords = ["Step", "Skill", "Stand"];
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
@@ -29,7 +30,7 @@ const Task1 = () => {
       </div>
 
       {/* task 1 card section */}
-      <div className="mt-[48px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[32px]">
+      <div className="mt-[48px] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[32px] ">
         {Task1Data.map((card, index) => {
           const hoveredCard = Task1DataHovered[index];
           const isHovered = hoveredId === card.id;
@@ -37,13 +38,13 @@ const Task1 = () => {
           return (
             <div
               key={card.id}
-              className="relative"
+              className="relative "
               onMouseEnter={() => hoveredCard && setHoveredId(card.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Normal Card */}
               <div
-                className="transition-all duration-[1200ms] ease-in-out"
+                className="transition-all duration-[1200ms] ease-in-out "
                 style={{
                   opacity: isHovered ? 0 : 1,
                   transform: isHovered ? "translateX(-100%)" : "translateX(0)",
@@ -59,7 +60,7 @@ const Task1 = () => {
                 />
               </div>
 
-              {/* Hovered Card — same position, fades in */}
+              {/* Hovered Card */}
               {hoveredCard && (
                 <div
                   className="absolute inset-0 transition-all duration-[1200ms] ease-in-out"
