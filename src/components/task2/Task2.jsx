@@ -54,7 +54,7 @@ const Task2 = () => {
 
               {/* Inactive card */}
               <div
-                className="transition-opacity duration-500 ease-in-out"
+                className="transition-opacity duration-500 ease-in-out mt-25 xl:mt-0"
                 style={{
                   opacity: isActive ? 0 : 1,
                   pointerEvents: isActive ? "none" : "auto",
