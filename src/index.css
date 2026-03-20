@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/nohemi");
+@import url("https://api.fontshare.com/v2/css?f[]=nohemi@400,500,600,700&display=swap");
 @import "tailwindcss";
 
 @theme {
